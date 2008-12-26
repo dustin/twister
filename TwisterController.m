@@ -50,7 +50,6 @@
 }
 
 -(void)awakeFromNib {
-    NSLog(@"Hello!");
     limbs = [[NSArray arrayWithObjects: @"Left Foot", @"Right Foot", @"Left Hand", @"Right Hand", nil] retain];
     colors = [[NSArray arrayWithObjects: @"Blue", @"Green", @"Red", @"Yellow", nil] retain];
 
@@ -58,9 +57,6 @@
     [defaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:
         [NSNumber numberWithInt:5], @"delay",
         nil]];
-
-    NSLog(@"Limbs:  %@", limbs);
-    NSLog(@"Colors:  %@", colors);
 
     synth=[[NSSpeechSynthesizer alloc] init];
 
