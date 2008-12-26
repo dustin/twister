@@ -21,6 +21,7 @@
 		DA1F70F30F048FD000BC3B0F /* Yellow.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA1F70EB0F048FD000BC3B0F /* Yellow.gif */; };
 		DA1F70F60F04903900BC3B0F /* TwisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F70F50F04903900BC3B0F /* TwisterController.m */; };
 		DA1F71480F0497EE00BC3B0F /* NSArray+RandomChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F71470F0497EE00BC3B0F /* NSArray+RandomChoice.m */; };
+		DA1F71CB0F049F8700BC3B0F /* Twister.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA1F71CA0F049F8700BC3B0F /* Twister.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		DA1F70F50F04903900BC3B0F /* TwisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwisterController.m; sourceTree = "<group>"; };
 		DA1F71460F0497EE00BC3B0F /* NSArray+RandomChoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RandomChoice.h"; sourceTree = "<group>"; };
 		DA1F71470F0497EE00BC3B0F /* NSArray+RandomChoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomChoice.m"; sourceTree = "<group>"; };
+		DA1F71CA0F049F8700BC3B0F /* Twister.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Twister.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		DA1F70D00F048E8B00BC3B0F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DA1F71CA0F049F8700BC3B0F /* Twister.icns */,
 				DA1F70E40F048FD000BC3B0F /* Blue.gif */,
 				DA1F70E50F048FD000BC3B0F /* Green.gif */,
 				DA1F70E60F048FD000BC3B0F /* Left Foot.gif */,
@@ -206,6 +209,7 @@
 				DA1F70F10F048FD000BC3B0F /* Right Foot.gif in Resources */,
 				DA1F70F20F048FD000BC3B0F /* Right Hand.gif in Resources */,
 				DA1F70F30F048FD000BC3B0F /* Yellow.gif in Resources */,
+				DA1F71CB0F049F8700BC3B0F /* Twister.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
