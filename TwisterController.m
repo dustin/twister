@@ -23,6 +23,9 @@
     NSLog(@"Limb:  %@", limb);
     NSLog(@"Color:  %@", color);
 
+    [synth stopSpeaking];
+    [synth startSpeakingString:[NSString stringWithFormat:@"%@ %@", limb, color]];
+
     [self setAnImage:leftPane to:limb];
     [self setAnImage:rightPane to:color];
 }
@@ -34,6 +37,8 @@
 
     NSLog(@"Limbs:  %@", limbs);
     NSLog(@"Colors:  %@", colors);
+
+    synth=[[NSSpeechSynthesizer alloc] init];
 
    timer = [NSTimer scheduledTimerWithTimeInterval:5.0
         target:self

@@ -16,6 +16,8 @@
     NSTimer *timer;
     NSArray *limbs;
     NSArray *colors;
+
+    NSSpeechSynthesizer *synth;
 }
 
 @end
