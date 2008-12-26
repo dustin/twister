@@ -30,6 +30,24 @@
     [self setAnImage:rightPane to:color];
 }
 
+-(void)toggleState:(id)sender {
+    if(timer == nil) {
+        timer = [NSTimer scheduledTimerWithTimeInterval:5.0
+            target:self
+            selector:@selector(newCall:)
+            userInfo:nil
+            repeats:YES];
+        [startStopButton setTitle:@"Stop"];
+        [self newCall:nil];
+    } else {
+        [timer invalidate];
+        timer=nil;
+        [leftPane setImage:nil];
+        [rightPane setImage:nil];
+        [startStopButton setTitle:@"Start"];
+    }
+}
+
 -(void)awakeFromNib {
     NSLog(@"Hello!");
     limbs = [[NSArray arrayWithObjects: @"Left Foot", @"Right Foot", @"Left Hand", @"Right Hand", nil] retain];
@@ -40,11 +58,7 @@
 
     synth=[[NSSpeechSynthesizer alloc] init];
 
-   timer = [NSTimer scheduledTimerWithTimeInterval:5.0
-        target:self
-        selector:@selector(newCall:)
-        userInfo:nil
-        repeats:YES];
+    timer = nil;
 }
 
 @end

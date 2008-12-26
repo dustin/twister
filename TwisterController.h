@@ -12,6 +12,7 @@
 @interface TwisterController : NSWindowController {
     IBOutlet NSImageView *leftPane;
     IBOutlet NSImageView *rightPane;
+    IBOutlet NSButton *startStopButton;
 
     NSTimer *timer;
     NSArray *limbs;
@@ -19,5 +20,7 @@
 
     NSSpeechSynthesizer *synth;
 }
+
+-(void)toggleState:(id)sender;
 
 @end
