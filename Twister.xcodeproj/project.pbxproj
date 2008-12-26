@@ -24,7 +24,22 @@
 		DA1F71CB0F049F8700BC3B0F /* Twister.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA1F71CA0F049F8700BC3B0F /* Twister.icns */; };
 		DA41B1FD0F04A37D00E530C1 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = DA41B1FB0F04A37D00E530C1 /* Credits.html */; };
 		DA41B2020F04A57300E530C1 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA41B2010F04A57300E530C1 /* PrefController.m */; };
+		DA41B2170F04A8A600E530C1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA41B2160F04A8A600E530C1 /* Sparkle.framework */; };
+		DA41B2280F04A92C00E530C1 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA41B2160F04A8A600E530C1 /* Sparkle.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA41B2230F04A8C500E530C1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA41B2280F04A92C00E530C1 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -53,6 +68,7 @@
 		DA41B1FC0F04A37D00E530C1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = English; path = English.lproj/Credits.html; sourceTree = "<group>"; };
 		DA41B2000F04A57300E530C1 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
 		DA41B2010F04A57300E530C1 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
+		DA41B2160F04A8A600E530C1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				DA41B2170F04A8A600E530C1 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA41B2160F04A8A600E530C1 /* Sparkle.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -174,6 +192,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				DA41B2230F04A8C500E530C1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -271,6 +290,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -279,6 +302,7 @@
 				GCC_PREFIX_HEADER = Twister_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Twister;
 			};
 			name = Debug;
@@ -288,6 +312,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Twister_Prefix.pch;
