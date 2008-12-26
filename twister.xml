@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+		xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+		xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Twister Changelog</title>
+		<link>http://public.west.spy.net/app/twister.xml</link>
+		<description>Twister Changelog</description>
+		<language>en</language>
+		<!-- date -u +"%a, %d %b %Y %H:%M:%S GMT" -->
+		<item>
+			<title>Version 1.0.  The first.  Probably the last.</title>
+			<description>
+				First release.
+			</description>
+			<pubDate>Fri, 26 Dec 2008 06:11:50 GMT</pubDate>
+			<enclosure url="http://you.com/app/Twister_1.0.zip"
+				sparkle:version="1.0" length="975775"
+				type="application/octet-stream" />
+		</item>
+	</channel>
+</rss>
