@@ -22,6 +22,7 @@
 		DA1F70F60F04903900BC3B0F /* TwisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F70F50F04903900BC3B0F /* TwisterController.m */; };
 		DA1F71480F0497EE00BC3B0F /* NSArray+RandomChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F71470F0497EE00BC3B0F /* NSArray+RandomChoice.m */; };
 		DA1F71CB0F049F8700BC3B0F /* Twister.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA1F71CA0F049F8700BC3B0F /* Twister.icns */; };
+		DA41B1FD0F04A37D00E530C1 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = DA41B1FB0F04A37D00E530C1 /* Credits.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		DA1F71460F0497EE00BC3B0F /* NSArray+RandomChoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RandomChoice.h"; sourceTree = "<group>"; };
 		DA1F71470F0497EE00BC3B0F /* NSArray+RandomChoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomChoice.m"; sourceTree = "<group>"; };
 		DA1F71CA0F049F8700BC3B0F /* Twister.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Twister.icns; sourceTree = "<group>"; };
+		DA41B1FC0F04A37D00E530C1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = English; path = English.lproj/Credits.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DA41B1FB0F04A37D00E530C1 /* Credits.html */,
 				DA1F70D00F048E8B00BC3B0F /* Images */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -210,6 +213,7 @@
 				DA1F70F20F048FD000BC3B0F /* Right Hand.gif in Resources */,
 				DA1F70F30F048FD000BC3B0F /* Yellow.gif in Resources */,
 				DA1F71CB0F049F8700BC3B0F /* Twister.icns in Resources */,
+				DA41B1FD0F04A37D00E530C1 /* Credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +247,14 @@
 				1DDD58150DA1D0A300B32029 /* English */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DA41B1FB0F04A37D00E530C1 /* Credits.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA41B1FC0F04A37D00E530C1 /* English */,
+			);
+			name = Credits.html;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
