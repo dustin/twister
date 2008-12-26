@@ -23,6 +23,7 @@
 		DA1F71480F0497EE00BC3B0F /* NSArray+RandomChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1F71470F0497EE00BC3B0F /* NSArray+RandomChoice.m */; };
 		DA1F71CB0F049F8700BC3B0F /* Twister.icns in Resources */ = {isa = PBXBuildFile; fileRef = DA1F71CA0F049F8700BC3B0F /* Twister.icns */; };
 		DA41B1FD0F04A37D00E530C1 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = DA41B1FB0F04A37D00E530C1 /* Credits.html */; };
+		DA41B2020F04A57300E530C1 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA41B2010F04A57300E530C1 /* PrefController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		DA1F71470F0497EE00BC3B0F /* NSArray+RandomChoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomChoice.m"; sourceTree = "<group>"; };
 		DA1F71CA0F049F8700BC3B0F /* Twister.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Twister.icns; sourceTree = "<group>"; };
 		DA41B1FC0F04A37D00E530C1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = English; path = English.lproj/Credits.html; sourceTree = "<group>"; };
+		DA41B2000F04A57300E530C1 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
+		DA41B2010F04A57300E530C1 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 				DA1F70F50F04903900BC3B0F /* TwisterController.m */,
 				DA1F71460F0497EE00BC3B0F /* NSArray+RandomChoice.h */,
 				DA1F71470F0497EE00BC3B0F /* NSArray+RandomChoice.m */,
+				DA41B2000F04A57300E530C1 /* PrefController.h */,
+				DA41B2010F04A57300E530C1 /* PrefController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				DA1F70F60F04903900BC3B0F /* TwisterController.m in Sources */,
 				DA1F71480F0497EE00BC3B0F /* NSArray+RandomChoice.m in Sources */,
+				DA41B2020F04A57300E530C1 /* PrefController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

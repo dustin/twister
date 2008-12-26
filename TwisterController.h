@@ -14,6 +14,7 @@
     IBOutlet NSImageView *rightPane;
     IBOutlet NSButton *startStopButton;
 
+    NSUserDefaults *defaults;
     NSTimer *timer;
     NSArray *limbs;
     NSArray *colors;

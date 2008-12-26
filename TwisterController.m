@@ -32,7 +32,8 @@
 
 -(void)toggleState:(id)sender {
     if(timer == nil) {
-        timer = [NSTimer scheduledTimerWithTimeInterval:5.0
+        int delay=[defaults integerForKey:@"delay"];
+        timer = [NSTimer scheduledTimerWithTimeInterval:delay
             target:self
             selector:@selector(newCall:)
             userInfo:nil
@@ -52,6 +53,11 @@
     NSLog(@"Hello!");
     limbs = [[NSArray arrayWithObjects: @"Left Foot", @"Right Foot", @"Left Hand", @"Right Hand", nil] retain];
     colors = [[NSArray arrayWithObjects: @"Blue", @"Green", @"Red", @"Yellow", nil] retain];
+
+    defaults = [NSUserDefaults standardUserDefaults];
+    [defaults registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:
+        [NSNumber numberWithInt:5], @"delay",
+        nil]];
 
     NSLog(@"Limbs:  %@", limbs);
     NSLog(@"Colors:  %@", colors);
