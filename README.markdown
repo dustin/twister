@@ -8,4 +8,4 @@ Now they can play without my help.
 
 # Download
 
-Grab [version 1.0](http://public.west.spy.net/app/Twister_1.0.zip) here.
+Grab [version 1.1](http://public.west.spy.net/app/Twister_1.1.zip) here.
