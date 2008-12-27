@@ -13,7 +13,6 @@
 
 -(id)choice {
     int r=random() % [self count];
-    NSLog(@"Pulling item #%d", r);
     return [self objectAtIndex:r];
 }
 
