@@ -17,8 +17,21 @@
 }
 
 -(void)newCall:(id) sender {
-    NSString *limb=[limbs choice];
-    NSString *color=[colors choice];
+    NSString *limb=nil;
+    NSString *color=nil;
+
+    do {
+        if(limb != nil) {
+            NSLog(@"Getting another limb/color combination.");
+        }
+        limb = [limbs choice];
+        color = [colors choice];
+    } while(limb == lastLimb && color == lastColor);
+
+    [lastLimb release];
+    [lastColor release];
+    lastLimb = [[limb retain] autorelease];
+    lastColor = [[color retain] autorelease];
 
     NSLog(@"Limb:  %@", limb);
     NSLog(@"Color:  %@", color);

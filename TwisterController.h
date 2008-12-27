@@ -19,6 +19,9 @@
     NSArray *limbs;
     NSArray *colors;
 
+    NSString *lastLimb;
+    NSString *lastColor;
+
     NSSpeechSynthesizer *synth;
 }
 
