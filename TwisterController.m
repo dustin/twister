@@ -62,6 +62,15 @@
     }
 }
 
+- (void)keyDown:(NSEvent *)event
+{
+	[super keyDown:event];
+
+	if([[event charactersIgnoringModifiers] characterAtIndex:0] == ' ') {
+		[self toggleState:self];
+    }
+}
+
 -(void)awakeFromNib {
     limbs = [[NSArray arrayWithObjects: @"Left Foot", @"Right Foot", @"Left Hand", @"Right Hand", nil] retain];
     colors = [[NSArray arrayWithObjects: @"Blue", @"Green", @"Red", @"Yellow", nil] retain];
