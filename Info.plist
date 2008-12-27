@@ -28,5 +28,7 @@
 	<string>http://public.west.spy.net/app/twister.xml</string>
 	<key>SUScheduledCheckInterval</key>
 	<integer>86400</integer>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 </dict>
 </plist>
