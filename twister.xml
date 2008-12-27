@@ -9,6 +9,27 @@
 		<language>en</language>
 		<!-- date -u +"%a, %d %b %Y %H:%M:%S GMT" -->
 		<item>
+			<title>Version 1.1</title>
+			<description>
+				&lt;ul>
+					&lt;li>Don't do the same move twice in a row.&lt;/li>
+					&lt;li>Space toggles starting and stopping.&lt;/li>
+					&lt;li>Misc cleanup.&lt;/li>
+				&lt;/ul>
+				&lt;p>
+					Please note that due to security stuff within sparkle, this update
+					&lt;strong>will not apply&lt;/strong>, and you'll need to &lt;a
+					href="http://public.west.spy.net/app/Twister_1.1.zip">download&lt;/a>
+					the update manually.
+				&lt;/p>
+			</description>
+			<pubDate>Sat, 27 Dec 2008 22:34:26 GMT</pubDate>
+			<enclosure url="http://public.west.spy.net/app/Twister_1.1.zip"
+				sparkle:version="1.1"
+				sparkle:dsaSignature="MC4CFQCp2nhBo0MRmKQwjMWjhluYp0MexQIVALBYoToA3lLqIdiVK7w31cHeLyi5"
+				length="976163" type="application/octet-stream" />
+		</item>
+		<item>
 			<title>Version 1.0.  The first.  Probably the last.</title>
 			<description>
 				First release.
